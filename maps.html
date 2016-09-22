@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+<html>
+	
+	<head>
+
+        <title>
+
+           	Welcome to Gito
+            
+        </title>
+
+        <meta charset="utf-8">
+
+    </head>
+
+ 
+<style type="text/css">
+
+
+            body{
+                background-color: rgb(255,125,73); 
+            }
+
+            #navBar {
+            	position:absolute;
+            	top: 0px;
+                list-style-type: none;
+                width:95%;
+                border-radius: 10px;
+                margin-left: 20px;
+                margin-right: 10px;
+                padding:0;
+                overflow: visible;
+                background-color: rgb(0,86,0);
+
+            }
+
+            li{
+                float: left; 
+            }
+
+            .NavLinks{
+                display: block;
+                color: rgb(255, 125, 73);
+                text-align: center;
+                padding: 14px 30px;
+
+            }
+
+            .NavLinks:hover{
+                background-color: rgb(0,0,0); 
+            }
+			
+			#map{
+				margin-right: 40px;
+				margin-top: 80px;
+				position: absolute;
+				top: 75px;
+				right:40px;
+				background-color: rgb(0,86,0);
+				border-radius: 10px;
+			}
+			
+			
+			#Account:hover{
+				background-color: rgb(0,0,0);
+			}
+			
+			#activity{
+				display:block;
+				background-color: rgb(0,86,0);
+				float:left;
+				position: absolute;
+				margin-left: 20px;
+				padding:10px;
+				margin-top: 100px;
+				border-radius: 10px;
+				
+			}
+			
+			table{
+				position: absolute;
+				top: 150px;
+				left: 20px;
+				background-color: rgb(0,86,0);
+				margin-top: 50px;
+				margin-left: 15px;
+			}
+			
+			
+ </style>
+        
+        
+<body>
+
+<ul id="navBar">
+      <li><a class="NavLinks">Home</a></li>
+      <li><a class="NavLinks">Chats</a></li>
+      <li><a class="NavLinks">Offers</a></li>
+      <li><a class= "NavLinks">Account</a></li>
+    </ul>
+    
+
+<div id = "activity">
+<form>
+  Search for Activity:  <input type="text" name="Aktivitätssuche"><br>
+</form> 
+</div>
+	
+<table style="width: 40%" border="1">
+      <tbody>
+        <tr>
+          <th>Contact</th>
+          <th>Activity</th>
+          <th>Where?</th>
+        </tr>
+        <tr>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+        </tr>
+		<tr>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+        </tr>
+        <tr>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+        </tr>
+        <tr>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+        </tr>
+        <tr>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+        </tr>
+		
+		        
+      </tbody>
+    </table>
+
+
+<div id="map" style="width:500px;height: 500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.9, 7.6),
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</body>
+</html>
+
